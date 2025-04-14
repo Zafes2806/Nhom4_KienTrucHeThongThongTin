@@ -69,5 +69,4 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 var context = app.Services.CreateScope().ServiceProvider.GetRequiredService<DBXemPhimContext>();
-BornData_test.SeedingData(context);
 app.Run();
